@@ -7,8 +7,8 @@ import (
 )
 
 func main() {
-	app := app.Generate()
-	error := app.Run(os.Args)
+	createdCli := app.Generate()
+	error := createdCli.Run(os.Args)
 
 	if error != nil {
 		log.Fatal(error)
